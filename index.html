@@ -32,15 +32,21 @@
 				font-size: 16px;
 				background-color: rgb(202, 205, 209);
 				line-height: 1.5rem;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
 			}
 
 			.container {
-				position: absolute;
+				/* position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				width: 80%;
-				height: 80%;
+				height: 80%; */
+				max-width: 1000px;
 				display: grid;
 				grid-template-columns: 100%;
 				grid-template-rows: 40% 30% 30%;
@@ -67,24 +73,27 @@
 				padding: 10% 5%;
 			}
 
-			p {
-				margin-bottom: 4%;
+			.lower p {
+				line-height: 1.2;
 			}
 
 			.title {
 				font-size: 24px;
 				font-weight: 700;
+				margin-bottom: 4%;
 			}
 
 			.subtitle {
 				font-size: 18px;
 				font-weight: 700;
+				margin-bottom: 4%;
 			}
 
 			.middle-line {
 				display: flex;
 				justify-content: flex-start;
 				align-items: center;
+				margin-bottom: 4%;
 			}
 
 			.cyan {
@@ -93,6 +102,7 @@
 
 			.bigger {
 				font-size: 28px;
+				font-weight: 700;
 			}
 
 			.yellow {
@@ -114,7 +124,7 @@
 				width: 90%;
 				height: 25%;
 				display: block;
-				margin: 0 auto;
+				margin: 10px auto;
 				font-weight: 400;
 				border-radius: 5%;
 			}
@@ -133,8 +143,8 @@
 
 			@media only screen and (min-width: 1440px) {
 				.container {
-					width: 45%;
-					height: 60%;
+					/* width: 45%;
+					height: 60%; */
 					grid-template-columns: 50% 50%;
 					grid-template-rows: 45% 55%;
 				}
@@ -168,16 +178,18 @@
 			</div>
 			<div class="middle">
 				<p class="subtitle white">Monthly Subscription</p>
-				<p class="middle-line white"><span class="title">&dollar;29 </span> per month</p>
+				<p class="middle-line white"><span class="bigger">&dollar;29 </span> per month</p>
 				<p class="white">Full access for less than &dollar;1 a day</p>
 				<button class="signup">Sign Up</button>
 			</div>
 			<div class="lower">
 				<p class="subtitle white">Why Us</p>
-				<p class="white">
-					Tutorials by industry experts Peer &amp; expert code review Coding exercises Access to our GitHub repos
-					Community forum Flashcard decks New videos every week
-				</p>
+				<p class="white">Tutorials by industry experts</p>
+				<p class="white">Peer &amp; expert code review</p>
+				<p class="white">Coding exercises</p>
+				<p class="white">Access to our GitHub repos</p>
+				<p class="white">Community forum Flashcard decks</p>
+				<p class="white">New videos every week</p>
 			</div>
 		</div>
 
